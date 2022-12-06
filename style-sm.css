@@ -1,0 +1,135 @@
+@media only screen and (max-width: 760px) {
+
+header {
+    margin: 0;
+    background-image: none;
+    height: auto;
+    overflow: visible;
+}
+
+header>div {
+    padding: 0 0 0 15px;
+}
+
+#top-menu {
+    display: none;
+}
+
+#site-brand {
+    text-align: center;
+    float: none;
+    display: block;
+}
+
+#type-container {
+    padding-top: 60px;
+}
+
+#type-container > p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#header-msg {
+    width: 100%;
+    height: auto;
+    padding: 80px 20px;
+    font-size: 10px;
+    background: #eeeeee;
+}
+
+#header-msg h3 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#header-msg h5 {
+    margin-top: 30px;
+}
+
+#header-msg h5>a {
+    display: block;
+    text-align: center;
+}
+
+
+#i-am-blocks div {
+    padding: 0;
+}
+
+#i-am-blocks img {
+    padding: 0%;
+    width: 30%;
+}
+
+#i-am-blocks h3 {
+    border: 0;
+    padding-top: 5px;
+}
+
+#i-am-blocks p {
+    padding-bottom: 25px;
+    margin-bottom: 60px;
+}
+
+
+#skills {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+#my-toolbox .row {
+    font-size: 10px;
+}
+
+
+#send-msg-box h2 {
+    display: inline-block;
+}
+
+#send-msg-box h6 {
+    display: inline-block;
+}
+
+#contact-details-container .col-sm-4 {
+    margin: 0 80px;
+    padding: 500px;
+    font-size: 10px;
+}
+
+.by-2 {
+    border: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+
+
+
+
+
+#social {
+    display: none;
+}
+
+#contact-popup-container {
+    height: auto;
+}
+
+#contact-popup {
+    width: 100%;
+    height: auto;
+    padding: 40px 10px;
+    font-size: 10px;
+}
+
+#contact-popup form {
+    padding-top: 15px;
+}
+
+.fa-times {
+    font-size: 30px;
+    right: 10px;
+}
+
+}

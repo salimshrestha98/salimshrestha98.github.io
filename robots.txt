@@ -1,0 +1,4 @@
+Sitemap: https://www.salim.com.np/sitemap.xml
+Sitemap: https://bestfreelancewebdeveloper251371425.wordpress.com/sitemap.xml
+User-agent: *
+Disallow:
