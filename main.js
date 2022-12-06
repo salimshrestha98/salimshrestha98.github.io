@@ -68,11 +68,10 @@ $(document).ready(function() {
     });
 
     function animateMetrics() {
-        var metricsArray = [5,2,500];
         $('.metric-value span').each(function (i) {
             var $this = $(this);
-            jQuery({ Counter: 0 }).animate({ Counter: metricsArray[i] }, {
-              duration: 2000,
+            $({ Counter: 0 }).animate({ Counter: $this.data('value') }, {
+              duration: 1500,
               easing: 'swing',
               step: function () {
                 $this.text(Math.ceil(this.Counter));
