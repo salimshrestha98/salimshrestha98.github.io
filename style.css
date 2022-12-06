@@ -321,12 +321,15 @@ nav {
 
 #about-me-img img{
     max-width: 100%;
-    padding: 0 5%;
+    /* padding: 0 5%; */
 }
 
 #about-me-text {
-    padding: 5%;
-    font-size: 1.2em;
+    padding: 5% 15% 5% 0;
+    font-size: 1.1em;
+    text-align: justify;
+    letter-spacing: 0.6px;
+    font-family: 'Abel', sans-serif;
 }
 
 
