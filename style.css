@@ -35,7 +35,7 @@ a:hover {
 }
 
 .zoomable {
-    opacity: 0; 
+    opacity: 0;
     animation-delay: 0ms;
     animation-iteration-count: 1;
     animation-duration: 1000ms;
@@ -198,12 +198,6 @@ nav {
 
 /* I-AM */
 
-
-/* 
-#i-am {
-    margin-bottom: 0px;
-    
-} */
 
 #i-am .wrapper {
     width: 90%;

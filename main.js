@@ -1,11 +1,9 @@
 $(document).ready(function() {
 
     function animateSkills() {
-        var skillLines = document.querySelectorAll(".skill-line");
-        var skillLevels = ["80%","85%","70%","82%","84%"];
-        for( var i = 0; i < skillLines.length; i++) {
-            $(skillLines[i]).animate({"width": skillLevels[i] },3000);
-        }
+        $( '.skill-line' ).each( function( el ) {
+            $(this).animate({"width": $(this).data('strength') },3000);
+        })
     }
 
 
@@ -17,12 +15,12 @@ $(document).ready(function() {
         self = $(zoomables[i]);
         offsets.push(self.offset().top);
     }
-  
+
     $('html').height(originalHeight);
 
     var contactFormShownBefore = false;
     var metricsAnimated = false;
-    
+
     window.onscroll = function() {
         var currentOffset = window.pageYOffset + 300;
         for(var i=0;i<zoomables.length;i++) {
@@ -30,22 +28,21 @@ $(document).ready(function() {
             if ( offsets[i] < currentOffset) {
                 if(zoomables[i].id == "skills") {
                     animateSkills();
-                } 
+                }
                 self.addClass("animate__zoomIn");
-                self.css("opacity",1);      
+                self.css("opacity",1);
             }
         }
 
         if( currentOffset > originalHeight - window.innerHeight  && !contactFormShownBefore ) {
-            // setTimeout( startContactPopup, 10000);         
+            // setTimeout( startContactPopup, 10000);
         }
 
         if( currentOffset - 100 > $('#experience').offset().top  && !metricsAnimated ) {
-            animateMetrics(); 
+            animateMetrics();
             metricsAnimated = true;
-            console.log('metrics animated!');       
         }
-    }  
+    }
 
     function startContactPopup() {
         $('body').css('overflow-y','hidden');
@@ -68,8 +65,6 @@ $(document).ready(function() {
 
     $('.startContactPopup').click(function() {
         startContactPopup();
-
-        console.log('start contact popup!');
     });
 
     function animateMetrics() {
